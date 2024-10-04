@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  header {
+    background-color: #170d4a;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  nav {
+    background-color: #170d4a;
+    padding: 0.5em;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 1em;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .hero {
+    background-image: url('https://example.com/images/travel-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .hero h2 {
+    font-size: 3em;
+  }
+  .destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+  }
+  .destination {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .destination:hover {
+    transform: translateY(-5px);
+  }
+  .destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .destination .info {
+    padding: 1em;
+  }
+  footer {
+    background-color: #170d4a;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .contact-info a {
+    background-color: #170d4a;
+    color: rgb(250, 245, 245);
+    text-decoration: none;
+    padding: 50px;
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAFA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/iconfont/material-icons.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.js" integrity="sha512-zPMZ/3MBK+R1rv6KcBFcf7rGwLnKS+xtB2OnWkAxgC6anqxlDhl/wMWtDbiYI4rgi/NrCJdXrmNGB8pIq+slJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <h1>Nafa Finance Travel Agency</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section id="home" class="hero">
+          <h2>Découvrez le monde avec nous</h2>
+        </section>
+        <section id="destinations">
+          <h2>Destinations populaires</h2>
+          <div class="destinations">
+            <div class="destination">
+              <img src="img - Copie/paris.jfif" alt="Tour Eiffel à Paris, France" width="250" height="200">
+              <div class="info">
+                <h3>Paris, France</h3>
+                <p>La ville de l'amour et des lumières.</p>
+              </div>
+            </div>
+            <div class="destination">
+              <img src="img - Copie/bali1.jfif" alt="Plage tropicale à Bali, Indonésie" width="250" height="200">
+              <div class="info">
+                <h3>Bali, Indonésie</h3>
+                <p>Un paradis tropical avec une riche culture.</p>
+              </div>
+            </div>
+            <div class="destination">
+              <img src="img - Copie/new york.jfif" alt="Skyline de New York, USA" width="250" height="200">
+              <div class="info">
+                <h3>New York, USA</h3>
+                <p>La ville qui ne dort jamais.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <h2>À propos de Nafa Finance Travel Agency</h2>
+          <p>Nafa Finance Travel Agency est votre partenaire de confiance pour tous vos besoins de voyage. Nous nous engageons à vous offrir des expériences de voyage inoubliables, personnalisées selon vos désirs et votre budget.</p>
+        </section>
+        <section id="contact">
+          <h2>Contactez-nous</h2>
+          <p>N'hésitez pas à nous contacter pour planifier votre prochain voyage ou pour toute question.</p>
+          <div class="contact-info">
+            <a href="tel:+237655737037">+237 655737037</a>
+            <a href="mailto:nafafinance2@gmail.com">nafafinance2@gmail.com</a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 Nafa Finance Travel Agency. Tous droits réservés.</p>
+      </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const navLinks = document.querySelectorAll('nav a');
+          navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+              targetElement.scrollIntoView({behavior: 'smooth'});
+            });
+          });
+        });
+      </script>
+</body>
+</html>
